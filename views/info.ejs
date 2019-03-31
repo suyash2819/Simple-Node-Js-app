@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="/assets/info.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <center>
+    <table>
+      <tr>
+        <th>
+          First Name
+        </th>
+        <th>
+          Last Name
+        </th>
+      </tr>
+             <% for(var i=0; i < clients.length ; i++){%>
+              <tr><td> <a href="<%=clients[i]._id %>"> <%= clients[i].firstn %></a></td>
+                  <td><a href="<%=clients[i]._id %>"> <%= clients[i].lastn %></a></td>
+                </tr>
+            <%} %>
+    </table>
+    </center>
+</html>

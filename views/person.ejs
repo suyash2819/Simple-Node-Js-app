@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!-- only email id incuded in database so making rendering that only -->
+    <h2> Your email id is</h2>
+    <% for(var i=0; i < clients.length ; i++){%>
+       <%= clients[i].email %>
+     <%} %>
+     <h2>Your Phone number is</h2>
+     <% for(var i=0; i < clients.length ; i++){%>
+        <%= clients[i].phone %>
+      <%} %>
+  </body>
+</html>
